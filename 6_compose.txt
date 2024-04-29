@@ -26,6 +26,9 @@ def hello():
     count = get_hit_count()
     return 'Hello World! I have been seen {} times.\n'.format(count)
 --------------------------------------------------------------------------------
+ctrl + o enter
+ctrl + x
+
 sudo nano requirements.txt
 ----------------------------------------------------------------requirment.txt-----
 flask
