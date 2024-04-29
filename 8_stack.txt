@@ -43,14 +43,14 @@ vi docker-compose.yml
 
 --------------------------------------------------------------
 change username to your username wherever necessary and in docker-compose.yml
--------------------------------------------------------------------------------------------docker-compose.yml---
+---------------------------------------------------docker-compose.yml---
 version: "3"
 services:
   # Service Name Defined as web
   web:
     # Pull the Image from Repository.
     # replace username/repo:tag with your name and image details
-    image: username/web_app:1.0
+    image: shrutisalunke/web_app:1.0
     # Command used to deploy the Service
     deploy:
       # Run 5 instances of that image as a service called web
@@ -124,11 +124,11 @@ cat requirements.txt
 
 ls
 docker build -t web_app .
-docker tag web_app:latest username/web_app:1.0
+docker tag web_app:latest shrutisalunke/web_app:1.0
 
 docker login 
 enter id/password of dockerhub
-docker push username/web_app:1.0
+docker push shrutisalunke/web_app:1.0
 docker stack deploy -c docker-compose.yml web_app
 docker node ls
 docker container ls 
